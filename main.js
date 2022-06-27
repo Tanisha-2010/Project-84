@@ -35,34 +35,28 @@ function my_keydown(e) {
         console.log("Alphabet key");
     }
 
-    {
+    if (keyPressed >= 48 && keyPressed <= 57) {
         numberkey();
         document.getElementById("d1").innerHTML = "You pressed Number Key";
         console.log("Number key");
     }
 
-    {
+    if (keyPressed >= 37 && keyPressed <= 40) {
         arrowkey();
         document.getElementById("d1").innerHTML = "You pressed Arrow Key";
         console.log("Arrow Key");
     }
 
-    {
+    if (keyPressed == 17 || keyPressed == 18 || keyPressed == 27) {
         specialkey();
         document.getElementById("d1").innerHTML = "You pressed Special Key";
         console.log("Special Key");
-    }
-
-    {
-        otherkey();
-        document.getElementById("d1").innerHTML = "You pressed Other Key";
-        console.log("Other Key");
     }
 }
 
 function aplhabetkey() {
     //upload respective image with the message.
-    img_image = "alpkey.png";
+    img_image = "Alpkey.png";
     add();
 }
 
